@@ -4,6 +4,7 @@
     "version": "0.01",
     "description": "Summarize website content using Gemini",
     "permissions": ["activeTab", "storage", "scripting", "nativeMessaging"],
+    "options_page": "options.html",
     "background": {
       "service_worker": "background.js"
     },
