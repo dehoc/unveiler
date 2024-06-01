@@ -13,7 +13,7 @@ async function summarizeTextInGemini(text) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ "contents": [{"parts":[
-      {"text": "Summarize the text content provided including key details and insights about the topic. In this summary, first include a brief 1-2 sentence summary briefly summarizing and explaining the topics discussed in the article. Then, expand further on these ideas by using bullet points."}, 
+      {"text": "Summarize the text content provided including key details and insights about the topic. In the summary, first add a title and then include a brief 1-2 sentence to briefly summarize and explain the topics discussed in the article. Then, expand further on the content by using bullet points but don't exceed 8 bullet points."}, 
       {text}]}
     ]})
   });
