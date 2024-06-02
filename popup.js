@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     
     summarizeButton.addEventListener('click', () => {
+      summarizeButton.disabled = true;
       chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         const tab = tabs[0];
         chrome.scripting.executeScript({
